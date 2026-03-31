@@ -17,7 +17,7 @@ const Hero = () => {
             <Relative className="min-h-screen max-h-[200vh] bg-white shadow-lg">
                 <Img
                 fill
-                src="/uvodni-sekce.jfif"
+                src="/uvodni-sekce.avif"
                 alt="Poskytuji kompletní služby od montáží antén pro sledování TV vysílání, monitorovacích kamer HikVision až po instalace alarmů Jablotron - Marek Svoboda | Saxon"
                 // p-2.5 md:p-4 lg:p-6 rounded-2xl
                 className="object-cover"
