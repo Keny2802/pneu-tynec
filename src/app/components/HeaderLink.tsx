@@ -42,9 +42,7 @@ const HeaderLink = ({
                     )
                 )
             }>
-                <Text>
-                    {children}
-                </Text>
+                {children}
             </Link>
         </Fragment>
     );

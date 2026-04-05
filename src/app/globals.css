@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
-@theme inline {
+@theme {
   --font-teko: var(--font-teko);
+  --primary-color: #facc15;
+  --secondary-color: #ffffff;
+  --third-color: #000000;
 }

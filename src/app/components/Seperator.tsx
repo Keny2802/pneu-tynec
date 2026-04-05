@@ -15,7 +15,7 @@ const Seperator = ({
     variant = "primary"
 }: props) => {
     const variants = {
-        primary: "max-w-[150px] h-[8px] bg-[#FACC15]",
+        primary: "max-w-[150px] h-[8px] primary-color",
         secondary: "max-w-[150px] h-[8px] bg-white"
     };
 

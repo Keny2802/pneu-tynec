@@ -5,7 +5,7 @@ import {
 import clsx from "clsx";
 
 interface props {
-    type?: "heroHeading" | "cardHeading" | "sectionHeading" | "boldText" | "bodyText";
+    type?: "heroHeading" | "sectionHeading" | "cardHeading" | "boldText" | "bodyText";
     className?: string;
     style?: React.CSSProperties;
     children: ReactNode;

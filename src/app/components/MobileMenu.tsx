@@ -10,6 +10,7 @@ import Logo from "./Logo";
 import Flex from "./Flex";
 import Cta from "./Cta";
 import Seperator from "./Seperator";
+import ListItem from "./ListItem";
 
 type props = {
     className?: string;
@@ -25,11 +26,15 @@ const MobileMenu = ({
 }: props) => {
     return (
         <Fragment>
-            <Wrapper className={clsx(className, isMobileMenuDisplayed ? "translate-x-0 md:-translate-x-full" : "-translate-x-full", "fixed inset-0 w-[320px] h-screen z-50 p-2.5 md:p-3 lg:p-4 bg-white shadow-lg transition-transform duration-300 ease-out mobile-menu-component")}>
+            <Wrapper className={clsx(className, isMobileMenuDisplayed ? "translate-x-0 md:-translate-x-full" : "-translate-x-full", "fixed inset-0 w-[320px] h-screen z-50 p-2.5 md:p-3 lg:p-4 bg-white shadow-lg transition-transform duration-300 ease-out mobile-menu-component")}
+            style={{
+                background: "var(--primary-color)"
+            }}>
                 <Flex
                 type="flexCol"
                 className="justify-between h-full">
                     <Logo />
+                    <Seperator variant="secondary" />
                     <Flex
                     type="flexCol"
                     className="justify-between h-full">
@@ -65,24 +70,27 @@ const MobileMenu = ({
 
                                         return (
                                             <Fragment key={idx}>
-                                                <li>
+                                                <ListItem>
                                                     <Link
                                                         href={href}>
                                                         {text}
                                                     </Link>
-                                                </li>
-                                                <Seperator />
+                                                </ListItem>
+                                                {/* <Seperator /> */}
                                             </Fragment>
                                         );
                                     })
                                 }
                             </Flex>
                         </ul>
-                        <Cta href="#kontakt">
-                            Mám zájem
+                        <Cta
+                        variant="secondary"
+                        href="tel:+420602822813">
+                            +420 602 822 813
                         </Cta>
                     </Flex>
                 </Flex>
+                {children}
             </Wrapper>
         </Fragment>
     );

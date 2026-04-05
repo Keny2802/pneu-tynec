@@ -10,6 +10,7 @@ type props = {
     type?: "flexRowOnly" | "flexRowCombo" | "flexRowReverseCombo" | "flexCol";
     className?: string;
     id?: string;
+    style?: React.CSSProperties;
     children?: ReactNode;
 };
 

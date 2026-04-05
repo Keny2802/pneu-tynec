@@ -37,7 +37,8 @@ const Hero = () => {
                         <Text
                         type="heroHeading"
                         className="uppercase">
-                            Váš partner pro Vaše pneumatiky
+                            {/* Váš partner pro Vaše pneumatiky */}
+                            Kompletní péče o Váš vůz.
                         </Text>
                         <Text type="boldText">
                             Přenechte Vaše starosti s pneutikami  zcela na Nás.
