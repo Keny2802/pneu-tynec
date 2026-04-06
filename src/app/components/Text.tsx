@@ -23,8 +23,8 @@ const Text = ({
       heroHeading: "text-4xl md:text-5xl lg:text-6xl font-black hero-heading-component",
       sectionHeading: "text-3xl md:text-4xl font-extrabold section-heading-component",
       cardHeading: "text-2xl md:text-3xl font-bold card-heading-component",
-      boldText: "text-xl font-semibold",
-      bodyText: "text-base md:text-[16.5px] lg:text-[16.75px] md:max-w-3xl body-text-component"
+      boldText: "text-[24px] font-semibold",
+      bodyText: "text-base md:text-[16.5px] lg:text-[23.75px] md:max-w-3xl body-text-component"
   };
 
   return (
