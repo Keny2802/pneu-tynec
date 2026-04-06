@@ -65,7 +65,7 @@ const About = (
                         width={500}
                         height={500}
                         src="/vymena-oleje.avif"
-                        alt="Výměna oleje - Pneu Týnec s.r.o. | pneutynec.cz"
+                        alt="Výměna oleje - Pneu Týnec s.r.o. | www.pneutynec.cz"
                         className="w-full md:max-w-[500px] md:max-h-[500px]"
                         />
                     </Flex>
