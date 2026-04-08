@@ -28,20 +28,20 @@ const Hero = () => {
                     <Flex
                     type="flexCol"
                     className="justify-center md:max-w-[650px]">
-                        <Wrapper>
+                        {/* <Wrapper>
                             <Text type="cardHeading">
                                 PneuTýnec s.r.o.
                             </Text>
                             <Seperator className="mt-2.5" />
-                        </Wrapper>
+                        </Wrapper> */}
                         <Text
                         type="heroHeading"
                         className="uppercase">
                             {/* Váš partner pro Vaše pneumatiky */}
-                            Kompletní péče o Váš vůz.
+                            Kompletní péče o Váš vůz
                         </Text>
                         <Text type="boldText">
-                            Přenechte Vaše starosti s pneutikami  zcela na Nás.
+                            Přenechte Vaše starosti s pneumatikami  zcela na Nás.
                         </Text>
                         <Cta
                         href="#kontakt"

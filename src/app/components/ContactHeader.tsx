@@ -10,6 +10,7 @@ import Logo from "./Logo";
 import ListContainer from "./ListContainer";
 import ListItem from "./ListItem";
 import HeaderLink from "./HeaderLink";
+import Text from "./Text";
 
 type Props = {
     className?: string;
@@ -36,9 +37,13 @@ const ContactHeader = ({
                     <Flex
                     type="flexRowOnly"
                     className="justify-between">
-                        <Logo />
+                        {/* <Logo /> */}
                         {
                             [
+                                {
+                                    href: "www.pneutynec.cz",
+                                    text: "www.pneutynec.cz",
+                                },
                                 {
                                     href: "mailto:p.vrkoslav@seznam.cz",
                                     text: "p.vrkoslav@seznam.cz",
@@ -59,12 +64,16 @@ const ContactHeader = ({
                                             href ? (
                                                 <ListItem>
                                                     <HeaderLink href={href}>
-                                                        {text}
+                                                        <Text type="boldText">
+                                                            {text}
+                                                        </Text>
                                                     </HeaderLink>
                                                 </ListItem>
                                             ) : (
                                                 <ListItem>
-                                                    {text}
+                                                    <Text type="boldText">
+                                                        {text}
+                                                    </Text>
                                                 </ListItem>
                                             )
                                         }

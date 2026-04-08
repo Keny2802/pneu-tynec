@@ -80,7 +80,7 @@ const Services = (
 
                             return (
                                 <Fragment key={idx}>
-                                    <Link href={href}>
+                                    {/* <Link href={href}> */}
                                         <Relative className="text-white cursor-pointer">
                                             <UpAnimation>
                                                 <Img
@@ -98,7 +98,7 @@ const Services = (
                                                         <Text type="cardHeading">
                                                             {text}
                                                         </Text>
-                                                        <Flex
+                                                        {/* <Flex
                                                         type="flexRowOnly">
                                                             <Text
                                                             type="boldText"
@@ -110,12 +110,12 @@ const Services = (
                                                                 Detail služby
                                                             </Text>
                                                             <ArrowDownRightIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
-                                                        </Flex>
+                                                        </Flex> */}
                                                     </Flex>
                                                 </Absolute>
                                             </UpAnimation>
                                         </Relative>
-                                    </Link>
+                                    {/* </Link> */}
                                 </Fragment>
                             );
                         })
