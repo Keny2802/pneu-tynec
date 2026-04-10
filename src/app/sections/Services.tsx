@@ -56,9 +56,9 @@ const Services = (
                             },
                             {
                                 src: "/prezuti-pneumatik.avif",
-                                alt: "Služba přezutí pneumatik - Pneu Týnec s.r.o.",
+                                alt: "Služba přezutí auto i moto pneumatik - Pneu Týnec s.r.o.",
                                 text: [
-                                    "Přezutí pneumatik",
+                                    "Přezutí auto i moto pneumatik",
                                 ],
                                 href: "/sluzby/prezuti-pneumatik"
                             },
@@ -80,9 +80,9 @@ const Services = (
                             },
                             {
                                 src: "/klimatizace.avif",
-                                alt: "Plnění klimatizace do automobilů - Pneu Týnec s.r.o.",
+                                alt: "Plnění klimatizace R134A, R1234YF - Pneu Týnec s.r.o.",
                                 text: [
-                                    "Plnění klimatizace do automobilů"
+                                    "Plnění klimatizace R134A, R1234YF"
                                 ],
                                 href: "/sluzby/plneni-klimatizace-do-automobilu"
                             },
@@ -91,7 +91,8 @@ const Services = (
                                 alt: "Samoobslužné mycí boxy - Pneu Týnec s.r.o.",
                                 text: [
                                     "Samoobslužné mycí boxy",
-                                    "Provozní doba mycích boxů: pondělí - neděle: 07:30 až 17:30",
+                                    "Provozní doba mycích boxů, listopad - březen: pondělí - neděle: 07:30 až 17:30",
+                                    "Provozní doba mycích boxů, duben - říjen: pondělí - neděle 07:30 až 20:00",
                                 ],
                                 href: "/sluzby/automycka"
                             },
