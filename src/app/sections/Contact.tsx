@@ -32,11 +32,11 @@ const Contact = (
                     className="uppercase">
                         Kontakt
                     </Text>
-                    <Text
+                    {/* <Text
                     type="sectionHeading"
                     className="uppercase">
                         Zavolejte nebo napište nám
-                    </Text>
+                    </Text> */}
                     <Seperator variant="secondary" />
                     <Grid type="threeGridLayout">
                         {
