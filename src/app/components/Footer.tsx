@@ -24,7 +24,10 @@ const Footer = ({
     return (
         <Fragment>
             <Wrapper
-            className={clsx(className, "p-4 md:p-5 lg:p-6 bg-[#0D1194] text-white border-y border-gray-400 footer-component")}
+            className={clsx(className, "p-4 md:p-5 lg:p-6 text-black border-y border-gray-400 footer-component")}
+            style={{
+                backgroundColor: "var(--primary-color)"
+            }}
             id={id}>
                 <Flex className="items-start">
                     <Flex type="flexCol">
@@ -51,12 +54,8 @@ const Footer = ({
                                                 text: "Služby"
                                             },
                                             {
-                                                href: "#cenik",
-                                                text: "Ceník"
-                                            },
-                                            {
-                                                href: "#o-mne",
-                                                text: "O mně"
+                                                href: "#o-nas",
+                                                text: "O nás"
                                             },
                                             {
                                                 href: "#kontakt",
@@ -72,7 +71,9 @@ const Footer = ({
                                                 <ListItem key={idx}>
                                                     <HeaderLink
                                                         href={href}>
-                                                        {text}
+                                                        <Text>
+                                                            {text}
+                                                        </Text>
                                                     </HeaderLink>
                                                 </ListItem>
                                             );
@@ -114,7 +115,9 @@ const Footer = ({
                                         <ListItem key={idx}>
                                             <HeaderLink
                                                 href={href}>
-                                                {text}
+                                                <Text>
+                                                    {text}
+                                                </Text>
                                             </HeaderLink>
                                         </ListItem>
                                     );
@@ -125,7 +128,7 @@ const Footer = ({
                     <Flex type="flexCol">
                         <Flex type="flexCol">
                             <Text type="boldText">
-                                Pojďme spolupracovat
+                                Důležité odkazy
                             </Text>
                             <Seperator variant="secondary" />
                         </Flex>
@@ -134,28 +137,28 @@ const Footer = ({
                                 {
                                     [
                                         {
-                                            text: "Marek Svoboda"
+                                            text: "Pneu Týnec s.r.o."
                                         },
                                         {
-                                            href: "mailto:saxondvb@gmail.com",
-                                            text: "saxondvb@gmail.com"
+                                            href: "mailto:p.vrkoslav@seznam.cz",
+                                            text: "p.vrkoslav@seznam.cz"
                                         },
                                         {
-                                            href: "tel:+420602184251",
-                                            text: "+420 602 184 251"
+                                            href: "tel:+420602822813",
+                                            text: "+420 602 822 813"
                                         },
                                         {
-                                            text: "Dubné, Křenovice 117, 373 84"
+                                            text: "K Lesíku 574, 257 41 Týnec nad Sázavou"
                                         },
                                         {
-                                            text: "IČO 73805017"
+                                            text: "IČO: 06722563"
                                         },
                                         {
-                                            text: "DIČ CZ7303171238 "
+                                            text: "DIČ: CZ06722563 "
                                         },
-                                        {
-                                            text: "Datum vzniku živnosti 04.09.2006"
-                                        },
+                                        // {
+                                        //     text: "Datum vzniku živnosti 04.09.2006"
+                                        // },
                                     ].map((contactInfo, idx) => {
                                         const {
                                             href,
@@ -167,12 +170,16 @@ const Footer = ({
                                                 {
                                                     text && !href ? (
                                                         <ListItem>
-                                                            {text}
+                                                            <Text>
+                                                                {text}
+                                                            </Text>
                                                         </ListItem>
                                                     ) : (
                                                         <ListItem>
                                                             <HeaderLink href={href || ""}>
-                                                                {text}
+                                                                <Text>
+                                                                    {text}
+                                                                </Text>
                                                             </HeaderLink>
                                                         </ListItem>
                                                     )
@@ -191,7 +198,7 @@ const Footer = ({
                     <Flex type="flexCol">
                         <Seperator variant="secondary" />
                         <Text>
-                            2006 - {DYNAMIC_YEAR}, Marek Svoboda (Saxon), Všechna práva vyhrazena.
+                            2016 - {DYNAMIC_YEAR}, Pneu Týnec s.r.o., Všechna práva vyhrazena.
                         </Text>
                     </Flex>
                 </Flex>

@@ -57,7 +57,7 @@ const About = (
                         <Cta
                         variant="secondary"
                         href="#kontakt">
-                            Takový servis chci
+                            Kontaktujte nás
                         </Cta>
                     </Flex>
                     <Flex type="flexCol">

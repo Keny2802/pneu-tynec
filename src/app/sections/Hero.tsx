@@ -14,7 +14,9 @@ import Seperator from "../components/Seperator";
 const Hero = () => {
     return (
         <Fragment>
-            <Relative className="min-h-screen max-h-[200vh] bg-white shadow-lg">
+            <Relative
+            className="min-h-screen max-h-[200vh] bg-white shadow-lg"
+            id="uvod">
                 <Img
                 fill
                 src="/uvodni-sekce.avif"

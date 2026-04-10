@@ -7,6 +7,8 @@ import Header from "./components/Header";
 import Hero from "./sections/Hero";
 import Services from "./sections/Services";
 import About from "./sections/About";
+import Contact from "./sections/Contact";
+import Footer from "./components/Footer";
 
 const Page = () => {
   return (
@@ -16,6 +18,8 @@ const Page = () => {
         <Hero />
         <Services />
         <About />
+        <Contact />
+        <Footer />
     </Fragment>
   );
 };

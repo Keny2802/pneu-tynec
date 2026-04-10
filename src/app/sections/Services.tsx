@@ -29,7 +29,7 @@ const Services = (
             style={{
                 background: "var(--primary-color)"
             }}
-            id={id}>
+            id={id ? id : "sluzby"}>
                 <Flex
                 type="flexCol"
                 className="text-black">
@@ -69,6 +69,18 @@ const Services = (
                                 alt: "Služba měření geometrie a seřizování kol - Pneu Týnec s.r.o.",
                                 text: "Měření geometrie a seřizování kol",
                                 href: "/sluzby/mereni-geometrie-a-serizovani-kol"
+                            },
+                            {
+                                src: "/klimatizace.avif",
+                                alt: "Plnění klimatizace do automobilů - Pneu Týnec s.r.o.",
+                                text: "Plnění klimatizace do automobilů",
+                                href: "/sluzby/plneni-klimatizace-do-automobilu"
+                            },
+                            {
+                                src: "/automycka.avif",
+                                alt: "Automyčka - Pneu Týnec s.r.o.",
+                                text: "Automyčka",
+                                href: "/sluzby/automycka"
                             },
                         ].map((service, idx) => {
                             const {
