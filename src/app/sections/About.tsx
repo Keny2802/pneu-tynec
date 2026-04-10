@@ -39,13 +39,16 @@ const About = (
                         <Text
                         type="sectionHeading"
                         className="uppercase">
-                            Pár slov o Nás.
+                            Pár slov o nás
                         </Text>
                         <Seperator variant="secondary" />
                         {
                             [
-                                "Jsme autoservis a pneuservis působící na trhu 20 let.",
-                                "Sídlíme na adrese K Lesíku 574, 257 41 Týnec nad Sázavou.",
+                                // "Jsme autoservis a pneuservis působící na trhu 20 let.",
+                                // "Sídlíme na adrese K Lesíku 574, 257 41 Týnec nad Sázavou.",
+                                "Nabízíme Vám kompletní péči o Váš vůz a mnoho doplňkových služeb. V našem pneuservisu Vám bez problémů přezujeme i pneumatiky velkých rozměrů.",
+                                "Zajistíme Vám nejen běžnou údržbu vozu, která mimo jiné zahrnuje výměny oleje, náplní a filtrů, servis a opravy brzd a servis výfukového systému, či seřízení geometrie kol, diagnostiku . Postaráme se také o údržbu a desinfekci klimatizace R134A, 1234YF.",
+                                "Naše služby dále obsahují celkové kontroly vozu a rádi Vám zajistíme přípravu a zajištění STK a Emisí.",
                             ].map((text, idx) => {
                                 return (
                                     <Text key={idx}>

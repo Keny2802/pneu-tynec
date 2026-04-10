@@ -49,37 +49,50 @@ const Services = (
                             {
                                 src: "/vymena-oleje.avif",
                                 alt: "Služba výměna oleje - Pneu Týnec s.r.o.",
-                                text: "Výměna oleje",
+                                text: [
+                                    "Výměna oleje",
+                                ],
                                 href: "/sluzby/vymena-oleje"
                             },
                             {
                                 src: "/prezuti-pneumatik.avif",
                                 alt: "Služba přezutí pneumatik - Pneu Týnec s.r.o.",
-                                text: "přezutí pneumatik",
+                                text: [
+                                    "Přezutí pneumatik",
+                                ],
                                 href: "/sluzby/prezuti-pneumatik"
                             },
                             {
                                 src: "/obstarame-jakekoliv-pneumatiky-a-disky.avif",
                                 alt: "Služba obstaráme jakékoliv pneumatiky a disky - Pneu Týnec s.r.o.",
-                                text: "Obstaráme jakékoliv pneumatiky a disky",
+                                text: [
+                                    "Obstaráme jakékoliv pneumatiky a disky",
+                                ],
                                 href: "/sluzby/obstarame-jakekoliv-pneumatiky-a-disky"
                             },
                             {
                                 src: "/mereni-geometrie-a-serizovani-kol.avif",
                                 alt: "Služba měření geometrie a seřizování kol - Pneu Týnec s.r.o.",
-                                text: "Měření geometrie a seřizování kol",
+                                text: [
+                                    "Měření geometrie a seřizování kol",
+                                ],
                                 href: "/sluzby/mereni-geometrie-a-serizovani-kol"
                             },
                             {
                                 src: "/klimatizace.avif",
                                 alt: "Plnění klimatizace do automobilů - Pneu Týnec s.r.o.",
-                                text: "Plnění klimatizace do automobilů",
+                                text: [
+                                    "Plnění klimatizace do automobilů"
+                                ],
                                 href: "/sluzby/plneni-klimatizace-do-automobilu"
                             },
                             {
                                 src: "/automycka.avif",
-                                alt: "Automyčka - Pneu Týnec s.r.o.",
-                                text: "Automyčka",
+                                alt: "Samoobslužné mycí boxy - Pneu Týnec s.r.o.",
+                                text: [
+                                    "Samoobslužné mycí boxy",
+                                    "Provozní doba mycích boxů: pondělí - neděle: 07:30 až 17:30",
+                                ],
                                 href: "/sluzby/automycka"
                             },
                         ].map((service, idx) => {
@@ -107,9 +120,17 @@ const Services = (
                                                 variant="bottomZero"
                                                 className="p-2.5 md:p-4 max-w-[600px]">
                                                     <Flex type="flexCol">
-                                                        <Text type="cardHeading">
-                                                            {text}
-                                                        </Text>
+                                                        {
+                                                            text.map((t, i) => {
+                                                                return (
+                                                                    <Text
+                                                                    key={i}
+                                                                    type="cardHeading">
+                                                                        {t}
+                                                                    </Text>
+                                                                );
+                                                            })
+                                                        }
                                                         {/* <Flex
                                                         type="flexRowOnly">
                                                             <Text

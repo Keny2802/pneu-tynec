@@ -43,7 +43,7 @@ const Hero = () => {
                             Kompletní péče o Váš vůz
                         </Text>
                         <Text type="boldText">
-                            Přenechte Vaše starosti s pneumatikami  zcela na Nás.
+                            Přenechte své starosti zcela na nás.
                         </Text>
                         <Cta
                         href="#kontakt"
