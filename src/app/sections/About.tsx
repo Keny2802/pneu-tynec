@@ -36,11 +36,11 @@ const About = (
                         className="uppercase">
                             O nás
                         </Text>
-                        <Text
+                        {/* <Text
                         type="sectionHeading"
                         className="uppercase">
                             Pár slov o nás
-                        </Text>
+                        </Text> */}
                         <Seperator variant="secondary" />
                         {
                             [
