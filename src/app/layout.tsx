@@ -24,8 +24,47 @@ const fontTeko = Teko({
 });
 
 export const metadata: Metadata = {
-  title: "PneuTýnec s.r.o.",
-  description: "PneuTýnec s.r.o.",
+  metadataBase: new URL("https://www.pneutynec.cz"),
+  title: "Pneuservis PneuTýnec s.r.o. | Přezutí, opravy pneu, Týnec nad Sázavou",
+  description: "Profesionální pneuservis v Týnci nad Sázavou. Nabízíme přezutí pneumatik, opravy, vyvážení kol a uskladnění pneu. Rychlé termíny a kvalitní servis.",
+  icons: [
+      {
+        url: "",
+        type: "", 
+      }
+  ],
+  keywords: [
+    "pneuservis Týnec nad Sázavou",
+    "přezutí pneumatik",
+    "oprava pneu",
+    "vyvážení kol",
+    "uskladnění pneumatik",
+    "levný pneuservis",
+    "pneu servis Týnec",
+    "servis kol",
+    "zimní pneumatiky",
+    "letní pneumatiky"
+  ],
+  openGraph: {
+    title: "Pneuservis PneuTýnec s.r.o.",
+    description: "Přezutí, opravy a servis pneumatik v Týnci nad Sázavou.",
+    images: [
+      {
+        width: 1200,
+        height: 630,
+        url: "/uvodni-sekce.avif",
+        alt: "Přezutí, opravy a servis pneumatik v Týnci nad Sázavou - www.pneutynec.cz"
+      }
+    ],
+    url: "https://www.pneutynec.cz",
+    siteName: "PneuTýnec s.r.o.",
+    locale: "cs_CZ",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

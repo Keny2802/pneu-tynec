@@ -1,6 +1,11 @@
+"use client";
+
 import {
     Fragment
 } from "react";
+import {
+    usePathname
+} from "next/navigation";
 import clsx from "clsx";
 
 import Wrapper from "./Wrapper";
@@ -19,6 +24,8 @@ const Footer = ({
     className?: string;
     id?: string
 }) => {
+    const pathname = usePathname();
+
     const DYNAMIC_YEAR = new Date().getFullYear();
 
     return (
@@ -70,7 +77,9 @@ const Footer = ({
                                             return (
                                                 <ListItem key={idx}>
                                                     <HeaderLink
-                                                        href={href}>
+                                                        href={
+                                                            pathname === "/" ? href : `/${href}`
+                                                        }>
                                                         <Text>
                                                             {text}
                                                         </Text>

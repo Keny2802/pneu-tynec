@@ -3,9 +3,11 @@
 import {
     ReactNode,
     useState,
-    useEffect,
     Fragment,
 } from "react";
+import {
+    usePathname
+} from "next/navigation";
 import {
     Bars3Icon,
     MinusIcon
@@ -29,6 +31,7 @@ type props = {
 
 const Header = (props: props) => {
     const [isMobileMenuDisplayed, setMobileMenuDiplay] = useState<boolean>(false);
+    const pathname = usePathname();
 
     return (
         <Fragment>
@@ -69,7 +72,9 @@ const Header = (props: props) => {
                                         return (
                                             <ListItem key={idx}>
                                                 <HeaderLink
-                                                    href={href}>
+                                                    href={
+                                                        pathname === "/" ? href : `/${href}`
+                                                    }>
                                                     <Text type="boldText">
                                                         {text}
                                                     </Text>
