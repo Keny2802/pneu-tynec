@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   description: "Profesionální pneuservis v Týnci nad Sázavou. Nabízíme přezutí pneumatik, opravy, vyvážení kol a uskladnění pneu. Rychlé termíny a kvalitní servis.",
   icons: [
       {
-        url: "",
-        type: "", 
+        url: "/favicon.avif",
+        type: "image/avif",
       }
   ],
   keywords: [
