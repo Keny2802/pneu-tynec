@@ -51,10 +51,6 @@ const MobileMenu = ({
                                             text: "Služby"
                                         },
                                         {
-                                            href: "#cenik",
-                                            text: "Ceník"
-                                        },
-                                        {
                                             href: "#o-mne",
                                             text: "O mně"
                                         },
